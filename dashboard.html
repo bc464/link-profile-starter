@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <title>linkProfile - Dashboard</title>
+    <link rel="stylesheet" href="style-dashboard.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar flex">
+      <a href="index.html"><img src="Assets/Logo-Dark.svg" alt="logo-dark" class="logo-dark"></a>
+      <div class="user-info flex">
+        <img src="Assets/User Avatar 2.png" alt="user avatar 2" class="user-avatar-2">
+        <p>Stephanie Mark</p>
+        <img src="Assets/Arrow-down.svg" alt="arrow-down-img" class="arrow-down-img">
+
+      </div>
+    </nav>
+    <main class="main-section flex">
+      <section class="sidebar flex">
+        <!-- <div class="all-links flex"> -->
+        <div class="top-links">
+          <div class="link home-link active flex">
+            <img src="Assets/Home.svg" alt="home-icon" class="home-icon">
+            <a href="dashboard.html">Home</a>
+          </div>
+           <div class="link flex">
+            <img src="Assets/Chart.svg" alt="chart-icon" class="chart-icon">
+            <a href="analytics.html">Analytics</a>
+          </div>
+           <div class="link flex">
+            <img src="Assets/Account Icon.svg" alt="account-icon" class="account-icon">
+            <a href="account.html">Account</a>
+          </div>
+
+        </div>
+        <div class="bottom-link">
+           <div class="link publish flex">
+            <img src="Assets/Settings.png" alt="settings-icon" class="settings-icon">
+            <p>Publish</p>
+          </div>
+        </div>
+     <!--  </div> -->
+      </section>
+      <section class="hero-section">
+        <h1>Welcome, Stephanie</h1>
+        <div class="video-insert flex">
+          <img src="Assets/Video-dashboard.png" alt="video clip" class="video-clip">
+          <img src="Assets/play.png" alt="play button on video" class="play-btn">
+          <div class="video-text-content">
+            <h2>How Freelancing Has Changed My life with Anderson Matthew</h2>
+            <p>Tune in to this episode of interviewing freelancers from around the world and how linkProfile has helped. In this episode, Anderson goes over his strategies to get your first online client and how to do outreach.</p>
+            <p class="extra-text">Anderson also goes over how linkProfile managed to secure a $60k client.</p>
+            <button class="btn video-btn">Watch Video Now</button>
+          </div>
+        </div>
+        <div class="social-media-section flex">
+          <div class="available-platforms">
+            <h3>Available Social Media Platforms</h3>
+            <div class="media-platforms">
+            <div class="platform dribbble flex">
+              <div class="platform-name flex">
+                <img src="Assets/Dribbble.svg" alt="dribbble-icon" class="platform-icon">
+                <p>Dribbble</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+          </div>
+
+            <div class="platform blogger flex">
+              <div class="platform-name flex">
+                <img src="Assets/Blogger.svg" alt="blogger-icon" class="platform-icon">
+                <p>Blogger</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+
+            <div class="platform discord flex">
+              <div class="platform-name flex">
+                <img src="Assets/Discord.svg" alt="discord-icon" class="platform-icon">
+                <p>Discord</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+
+            <div class="platform youtube flex">
+              <div class="platform-name flex">
+                <img src="Assets/Youtube.svg" alt="youtube-icon" class="platform-icon">
+                <p>Youtube</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+
+            <div class="platform linkedin flex">
+              <div class="platform-name flex">
+                <img src="Assets/Linkedin.svg" alt="linkedin-icon" class="platform-icon">
+                <p>Linkedin</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+            <hr class="hr-line">
+            <button class="btn btn-create">Create custom link</button>
+          </div>
+
+          <div class="currently-added">
+            
+            <div class="currently-added-platforms">
+              <h3>Currently Added</h3>
+              <div class="curr-platform">
+              <div class="platform linkedin flex">
+                <div class="platform-name flex">
+                  <img src="Assets/Linkedin.svg" alt="linkedin-icon" class="platform-icon">
+                  <p>Linkedin</p>
+                </div>
+                <img src="Assets/Close.svg" alt="close-icon" class="close-icon">
+              </div>
+            </div>
+
+              <div class="platform twitter flex">
+                <div class="platform-name flex">
+                  <img src="Assets/Twitter.svg" alt="twitter-icon" class="platform-icon">
+                  <p>Twitter</p>
+                </div>
+                <img src="Assets/Close.svg" alt="close-icon" class="close-icon">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="analytics-overview">
+            <img src="Assets/Analytics Overview.png" alt="analytics-overview-img" class="analytics-overview-img">
+          </div>
+        </div>
+      </section>
+      <section id="myModal" class="modal">
+        <div class="modal-heading flex">
+          <h4>Create a custom social media link</h4>
+          
+          <img src="Assets/Close.svg" alt="close-icon" class="close-icon-modal">
+        </div>
+        <form>
+          <label>Social Media Name</label><br>
+          <input type="text" placeholder="i.e Behance" class="input-media-name"><br>
+          <label>Color</label><br>
+          <input type="text" placeholder="i.e #0533ef" class="bgColor"><br>
+          <label>Link</label><br>
+          <input type="text" placeholder="i.e https://behance.net" class="link-address"><br>
+          <label>Icon Link</label><br>
+          <input type="text" placeholder="i.e https://cdn.com/behance.svg" class="iconLink" alt="missing"><br>
+          <button id="create-link" class="btn btn-custom-link">Add Custom Link</button>
+
+
+        </form>
+
+      </section>
+
+
+
+
+    </main>
+
+
+  </body>
+  </html>

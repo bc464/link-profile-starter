@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <title>linkProfile - Setup Page</title>
+     <link rel="stylesheet" href="style-dashboard.css" />
+    <link rel="stylesheet" href="style-setup.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+    <img src="Assets/Logo-Dark.svg" alt="dark logo" class="logo">
+
+    <section class="page-one">
+    <div class="step-indicator">
+      <p><span class="focus">1</span></p>
+      <div class="line"></div>
+      <p><span>2</span></p>
+        <div class="line"></div>
+        <p><span>3</span>
+        </p>
+      </div>
+    
+    <h1>Let's get you setup in less than 5 minutes!</h1>
+    <p class="main-text">You'll have a custom website after finishing this setup.</p>
+    <form>
+      <label class="fname" for="fname">Full Name</label><br>
+      <input type="text" id="fname" name="fname" placeholder="John Doe" class="input-name"><br>
+      <label class="link-profile-label" for="link-profile">Your linkProfile link</label><br>
+      <input type="text" id="link-profile" name="link-profile" placeholder="https://linkProfile/steph" class="link-profile"><br>
+    
+    <button id="next-btn" class="btn-next next-btn">Next</button>
+    </form>
+  </section>
+  <section class="page-two">
+    
+    <div class="step-indicator">
+      <p><span id="step-num" >1</span></p>
+      <div class="line"></div>
+      <p><span id="step-num" class="focus">2</span></p>
+      <div class="line"></div>
+      <p><span id="step-num">3</span>
+          </p>
+    </div>
+    
+    <h1>Choose your social media profiles</h1>
+    <p class="main-text">Add the social media profiles you'd like to be displayed on your website.</p>
+    <div class="social-media-section flex">
+          <div class="available-platforms">
+            <h3>Available Social Media Platforms</h3>
+            <div class="platform dribbble flex">
+              <div class="platform-name flex">
+                <img src="Assets/Dribbble.svg" alt="dribbble-icon" class="platform-icon">
+                <p>Dribbble</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+
+            <div class="platform blogger flex">
+              <div class="platform-name flex">
+                <img src="Assets/Blogger.svg" alt="blogger-icon" class="platform-icon">
+                <p>Blogger</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+
+            <div class="platform discord flex">
+              <div class="platform-name flex">
+                <img src="Assets/Discord.svg" alt="discord-icon" class="platform-icon">
+                <p>Discord</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+
+            <div class="platform youtube flex">
+              <div class="platform-name flex">
+                <img src="Assets/Youtube.svg" alt="youtube-icon" class="platform-icon">
+                <p>Youtube</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+
+            <div class="platform linkedin flex">
+              <div class="platform-name flex">
+                <img src="Assets/Linkedin.svg" alt="linkedin-icon" class="platform-icon">
+                <p>Linkedin</p>
+              </div>
+              <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+            </div>
+            <div class="platform twitter flex">
+                <div class="platform-name flex">
+                  <img src="Assets/Twitter.svg" alt="twitter-icon" class="platform-icon">
+                  <p>Twitter</p>
+                </div>
+                <img src="Assets/Plus.svg" alt="plus-icon" class="plus-icon">
+              </div>
+           
+          </div>
+
+          <div class="currently-added">
+            
+            <div class="currently-added-platforms">
+              <h3>Currently Added</h3>
+              <!-- <div class="platform flex">
+                <div class="platform-name flex">
+                  <img src="Assets/Linkedin.svg" alt="linkedin-icon" class="platform-icon">
+                  <p>Linkedin</p>
+                </div>
+                <img src="Assets/Close.svg" alt="close-icon" class="close-icon">
+              </div>
+
+              
+            </div> -->
+          </div>
+    
+    <button class="page2-btn next-btn">Next</button>
+    
+  </section>
+  <section class="page-three">
+
+    <div class="step-indicator">
+      <p><span >1</span></p>
+      <div class="line"></div>
+      <p><span>2</span></p>
+        <div class="line"></div>
+        <p><span class="focus">3</span>
+        </p>
+      </div>
+    <img src="Assets/Checkmark Done.svg" alt="checkmark done" class="checkmark-done">
+    <h1>That's it!</h1>
+    <p class="main-text-three">You'll have more customization in your dashboard.</p>
+   
+    
+    <button class="btn-next btn-dashboard"><a href="dashboard.html">Go to dashboard</a></button>
+   
+  </section>
+  </main>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <title>linkProfile - Dashboard</title>
+    <link rel="stylesheet" href="style-dashboard.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar flex">
+      <a href="index.html"><img src="Assets/Logo-Dark.svg" alt="logo-dark" class="logo-dark"></a>
+      <div class="user-info flex">
+        <img src="Assets/User Avatar 2.png" alt="user avatar 2" class="user-avatar-2">
+        <p>Stephanie Mark</p>
+        <img src="Assets/Arrow-down.svg" alt="arrow-down-img" class="arrow-down-img">
+      </div>
+    </nav>
+    <main class="main-section flex">
+      <section class="sidebar sidebar-account flex">
+        <div class="top-links">
+          <div class="link home-link flex">
+            <img src="Assets/Home.svg" alt="home-icon" class="home-icon">
+            <a href="dashboard.html">Home</a>
+          </div>
+           <div class="link flex">
+            <img src="Assets/Chart.svg" alt="chart-icon" class="chart-icon">
+            <a href="analytics.html">Analytics</a>
+          </div>
+           <div class="link active flex">
+            <img src="Assets/Account Icon.svg" alt="account-icon" class="account-icon">
+            <a href="account.html">Account</a>
+          </div>
+        </div>
+        <div class="bottom-link">
+           <div class="link publish flex">
+            <img src="Assets/Settings.png" alt="settings-icon" class="settings-icon">
+            <p>Publish</p>
+          </div>
+        </div>
+      </section>
+      <section class="main-account-section">
+        <div class="main-account flex">
+          <div class="main-account-left">
+            <h4>General</h4>
+            <p>Change general settings for your account.</p>
+          </div>
+          <div class="main-account-right">
+            <div class="name-link flex" >
+            <div class="full-name">
+              <h4>Full Name</h4>
+              <input type="text" placeholder="John Doe" class="full-name-input">
+            </div>
+            <div class="linkprofile-link">
+              <h4>Your linkProfile link</h4>
+              <input type="text" placeholder="https://linkProfile/steph" class="full-name-input">
+            </div>
+          </div>
+            <p class="mail-text">Your email is stephaniemark@example.com <a href="#">Change email</a></p>
+          </div>
+        </div>
+        <hr class="hr-line-account">
+<div class="main-account flex">
+          <div class="main-account-left">
+            <h4>Preferred Language</h4>
+            <p>This is your account's language, not your linkProfile website..</p>
+          </div>
+          <div class="main-account-right">
+            <div class="language">
+              <h4>Language</h4>
+              <div class="input-language flex">
+              <input type="text" placeholder="English" class="timezone-input"><img src="Assets/Arrow-down.svg" alt="down arrow icon" class="down-arrow-icon-language">
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-line-account">
+        <div class="main-account flex">
+          <div class="main-account-left">
+            <h4>Timezone</h4>
+          </div>
+          <div class="main-account-right">
+            <div class="timezone-info">
+              <h4>Timezone</h4>
+              <div class="input-timezone flex">
+              <input type="text" placeholder="(GMT+02:00) Cairo" class="timezone-input"><img src="Assets/Arrow-down.svg" alt="down arrow icon" class="down-arrow-icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </body>
+</html>
